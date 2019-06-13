@@ -1,22 +1,42 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View,YellowBox } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
 import {createAppContainer} from 'react-navigation'
-import AppNavigator from './src/routes'
+// import AppNavigator from './src/routes'
+import Routes from './Routes'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-const AppIndex = createAppContainer(AppNavigator)
+// const AppIndex = createAppContainer(AppNavigator)
+const AppIndex = createAppContainer(Routes)
 
-YellowBox.ignoreWarnings([
-  "Warning: isMounted(...) is deprecated",
-  "Module RCTImageLoader"
-]);
 
 export default class App extends Component {
   render() {
     return (
-      <View style={{flex: 1}}>
-        <AppIndex />  
+      <View style={styles.wrapper}>
+        {/* <StatusBar
+          backgroundColor='#000'
+          barStyle= 'default'
+        />
+        <View style={styles.header}>
+          <MaterialIcons name='live-tv' size={28} color='#f44336'/>
+        </View>
+        <AppIndex/>   */}
+        <AppIndex />
       </View>
     )
   }
 }
 
+const styles = StyleSheet.create({
+  wrapper: {
+    flex: 1
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingHorizontal: 25,
+    paddingTop: 15,
+    paddingBottom: 15
+  }
+})
