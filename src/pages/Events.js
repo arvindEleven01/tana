@@ -6,7 +6,7 @@ export default class Events extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text> Hello From Events </Text>
+        <Text>Events Details</Text>
         <Button
             raised
             onPress={() => this.props.navigation.navigate("Event",{ hideTabBar: true })}
