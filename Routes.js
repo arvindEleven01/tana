@@ -10,9 +10,7 @@ const Routes = createStackNavigator({
     screen: Register,
     navigationOptions: {
       headerTitle: "Register",
-      header: props => <CustomHeader {
-        ...props}
-      />
+      header: props => <CustomHeader {...props} />
     }
   },
   Dashboard: {
@@ -23,7 +21,7 @@ const Routes = createStackNavigator({
   }
 }, {
     initialRouteName: "Register",
-    navigationOptions: {
+    defaultNavigationOptions: {
       ...HeaderStyles,
       animationEnabled: true
     }

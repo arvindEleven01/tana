@@ -42,7 +42,7 @@ const Tab1 = createStackNavigator({
     }
   }
 }, {
-  navigationOptions: {
+  defaultNavigationOptions: {
     ...headerDefaultNavigationConfig
   }
 });
@@ -56,7 +56,7 @@ const Tab2 = createStackNavigator({
     }
   }
 }, {
-  navigationOptions: {
+  defaultNavigationOptions: {
     ...headerDefaultNavigationConfig
   }
 });
@@ -70,7 +70,7 @@ const Tab3 = createStackNavigator({
     }
   }
 }, {
-  navigationOptions: {
+  defaultNavigationOptions: {
     ...headerDefaultNavigationConfig
   }
 });
@@ -90,7 +90,7 @@ const Tab4 = createStackNavigator({
     }
   }
 }, {
-  navigationOptions: {
+  defaultNavigationOptions: {
     ...headerDefaultNavigationConfig
   }
 });

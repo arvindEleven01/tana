@@ -30,13 +30,5 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1
-  },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    paddingHorizontal: 25,
-    paddingTop: 15,
-    paddingBottom: 15
   }
 })
