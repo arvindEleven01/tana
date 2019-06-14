@@ -1,16 +1,13 @@
 import React from 'react';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
-import Icon from "react-native-vector-icons/Ionicons";
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import Home from './pages/Home'
 import Location from './pages/Location'
 import Place from './pages/Place'
-
 import Events from './pages/Events'
 import Event from './pages/Event'
 import Contacts from './pages/Contacts'
 import Contact from './pages/Contact'
-
 import CustomHeader from "./CustomHeader";
 import HeaderStyles from "../headerStyles";
 

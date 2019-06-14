@@ -16,14 +16,6 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.wrapper}>
-        {/* <StatusBar
-          backgroundColor='#000'
-          barStyle= 'default'
-        />
-        <View style={styles.header}>
-          <MaterialIcons name='live-tv' size={28} color='#f44336'/>
-        </View>
-        <AppIndex/>   */}
         <AppIndex />
       </View>
     )
@@ -33,5 +25,5 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1
-  }
+  } 
 })

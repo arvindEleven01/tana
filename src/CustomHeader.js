@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "react-navigation";
 import { View, Platform, StatusBar, StyleSheet } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const MyStatusBar = ({backgroundColor, ...props}) => (
   <View style={[styles.statusBar, { backgroundColor }]}>
