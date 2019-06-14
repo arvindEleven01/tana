@@ -11,6 +11,8 @@ import Contact from './pages/Contact'
 import CustomHeader from "./CustomHeader";
 import HeaderStyles from "../headerStyles";
 
+import HeaderIcon from './HeaderIcon'
+
 let headerDefaultNavigationConfig = {
   header: props => <CustomHeader {...props} />,
   ...HeaderStyles
@@ -38,7 +40,7 @@ const Tab1 = createStackNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
-      headerLeft: null,
+      headerRight: <HeaderIcon />,
       headerTitle: "Home"
     }
   }
