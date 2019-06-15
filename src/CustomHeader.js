@@ -2,7 +2,6 @@ import React from "react";
 import { Header } from "react-navigation";
 import { View, Platform, StatusBar, StyleSheet } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const MyStatusBar = ({backgroundColor, ...props}) => (
   <View style={[styles.statusBar, { backgroundColor }]}>
@@ -13,12 +12,8 @@ const MyStatusBar = ({backgroundColor, ...props}) => (
 const CustomHeader = props => {
   return (
     <View style={{ height: 56, marginTop: Platform.OS == "ios" ? 20 : 0 }}>
-      <MyStatusBar backgroundColor="#f44336" barStyle="light-content" />
-      <LinearGradient
-        colors = {
-          ["#f44336", "#d32f2f"]
-        }
-      >
+      <MyStatusBar backgroundColor="#d32f2f" barStyle="light-content" />
+      <LinearGradient colors = { ["#f44336", "#d32f2f"] }>
         <Header {...props} />
       </LinearGradient>
     </View>
